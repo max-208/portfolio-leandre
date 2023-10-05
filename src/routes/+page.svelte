@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import ChangePage from './../components/ChangePage.svelte';
+    import { Directions } from '../stores';
+</script>
+
+<h1 class="text-6xl">Acceuil</h1>
+<ChangePage href="gravure" direction={Directions.Left} >
+    Gravure
+</ChangePage>
+<ChangePage href="illustration" direction={Directions.Right} >
+    Illustration
+</ChangePage>
+<ChangePage href="contact" direction={Directions.Down} >
+    Contact
+</ChangePage>
