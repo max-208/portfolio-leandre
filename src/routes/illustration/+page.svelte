@@ -4,6 +4,6 @@
 </script>
 
 <h1 class="text-6xl">Illustration</h1>
-<ChangePage href=".." direction={Directions.Left} >
+<ChangePage direction={Directions.Left} >
     acceuil
 </ChangePage>

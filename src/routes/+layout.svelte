@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths'
 	import PageTransition from './../components/PageTransition.svelte';
     import BackgroundImage from './../components/BackgroundImage.svelte';
     import "../app.css";
@@ -8,15 +9,15 @@
         console.log(data.url);
         
         switch (data.url) {
-        case "/contact":
+        case base+"/contact":
             offsetX = 50;
             offsetY = 100;
             break;
-        case "/gravure":
+        case base+"/gravure":
             offsetX = 0;
             offsetY = 0; //TODO : scroll
             break;
-        case "/illustration":
+        case base+"/illustration":
             offsetX = 100;
             offsetY = 0; //TODO : scroll
             break;

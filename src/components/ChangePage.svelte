@@ -1,12 +1,13 @@
 <script lang="ts">
-import { Directions, selectedDirection } from "../stores";
+    import { base } from '$app/paths'
+    import { Directions, selectedDirection } from "../stores";
 
-export let direction:Directions = Directions.None;
-export let href:string = "/";
-const handleClick = ()=>{
-    selectedDirection.set(direction);
-}
+    export let direction:Directions = Directions.None;
+    export let href:string = "/";
+    const handleClick = ()=>{
+        selectedDirection.set(direction);
+    }
 </script>
-<a {href} {...$$restProps} on:click={handleClick}>
+<a href={base+href} {...$$restProps} on:click={handleClick}>
     <slot/>
 </a>

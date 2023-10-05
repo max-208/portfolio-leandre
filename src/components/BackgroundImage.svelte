@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let imageUrl = "background.png"; // URL of the background image
+    import { base } from '$app/paths'
+    export let imageUrl = "/background.png"; // URL of the background image
     export let offsetX = 50; // Initial X offset (pan)
     export let offsetY = 0; // Initial Y offset (pan)
 
@@ -16,7 +17,7 @@
         <div class="overflow-hidden relative w-screen h-screen">
             <div
                 class="h-[100vh]"
-                style={`background-image: url(${imageUrl}); background-position: ${backgroundX} ${backgroundY}; transition: background-position .3s`}
+                style={`background-image: url(${base + imageUrl}); background-position: ${backgroundX} ${backgroundY}; transition: background-position .3s`}
             ></div>
         </div>
     </div>

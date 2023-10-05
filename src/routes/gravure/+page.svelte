@@ -4,6 +4,6 @@
 </script>
 
 <h1 class="text-6xl">Gravure</h1>
-<ChangePage href=".." direction={Directions.Right} >
+<ChangePage direction={Directions.Right} >
     acceuil
 </ChangePage>
