@@ -17,7 +17,7 @@
         <div class="overflow-hidden relative w-screen h-screen">
             <div
                 class="h-[100vh]"
-                style={`background-image: url(${base + imageUrl}); background-position: ${backgroundX} ${backgroundY}; transition: background-position .3s`}
+                style={`background-image: url(${base + imageUrl}); background-position: ${backgroundX} ${backgroundY}; transition: background-position .6s`}
             ></div>
         </div>
     </div>

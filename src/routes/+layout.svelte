@@ -30,12 +30,12 @@
 </script>
 <main>
     <BackgroundImage {offsetX} {offsetY}>
-        <PageTransition key={data.url}>
-            <div class="w-screen h-screen">
-                <div class="m-auto w-fit h-fit">
+        <div class="w-screen h-screen">
+            <div class="m-auto w-fit h-fit">
+                <PageTransition key={data.url}>
                     <slot/>
-                </div>
+                </PageTransition>
             </div>
-        </PageTransition>
+        </div>
     </BackgroundImage>
 </main>
